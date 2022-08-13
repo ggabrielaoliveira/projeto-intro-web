@@ -9,21 +9,44 @@ const objeto2={
     nome:"Elissabat",
     idade:1601,
     especie:"Vampiro",
-    generoF2:true,
-    amigos2:["Draculaura","Viperine Gorgon"]
+    generoF:true,
+    amigos:["Draculaura","Viperine Gorgon"]
 }
 const objeto3={
     nome:"Clawd Wolf",
     idade:17,
     especie:"Lobisomem",
-    generoF2:false,
-    amigos2:["Heath Burns","Deuce Gorgon","Draculaura","Jackson Jekyll"]
+    generoF:false,
+    amigos:["Heath Burns","Deuce Gorgon","Draculaura","Jackson Jekyll"]
 }
-console.log(objeto1,objeto2,objeto3)
 
+console.log(objeto1,objeto2,objeto3)
+// arrayObjt.push(objeto1,objeto2,objeto3);
 const arrayObjt=[];
-arrayObjt.push(objeto1,objeto2,objeto3);
+// // semana 4
+if(objeto1.generoF){
+    console.log("validado")
+    arrayObjt.push(objeto1)
+}else{
+    console.log("não validado")
+}
+if(objeto2.generoF){
+    console.log("validado")
+    arrayObjt.push(objeto2)
+}else{
+    console.log("não validado")
+}
+if(objeto3.generoF){
+    console.log("validado")
+    arrayObjt.push(objeto3)
+}else{
+    alert("item não adicionado")
+}
 console.log(arrayObjt);
+// objeto1.generoF ? arrayObjt.push(objeto1) : alert("item não adicionado")
+// objeto2.generoF ? arrayObjt.push(objeto2) : alert("item não adicionado")
+// objeto3.generoF ? arrayObjt.push(objeto3) : alert("item não adicionado")
+
 
 // const nome="Cléo de Nile";
 // const nomeMaiuscula=nome.toUpperCase();
