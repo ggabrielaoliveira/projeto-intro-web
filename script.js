@@ -1,84 +1,158 @@
-const objeto1={
-    nome:"Cléo de Nile",
-    idade:5843,
-    especie:"Múmia",
-    generoF:true,
-    amigos:["Deuce Gorgon","Ghoulia Yelps","Clawdeen Wolf","Frankie Stein"]
-}
-const objeto2={
-    nome:"Elissabat",
-    idade:1601,
-    especie:"Vampiro",
-    generoF:true,
-    amigos:["Draculaura","Viperine Gorgon"]
-}
-const objeto3={
-    nome:"Clawd Wolf",
-    idade:17,
-    especie:"Lobisomem",
-    generoF:false,
-    amigos:["Heath Burns","Deuce Gorgon","Draculaura","Jackson Jekyll"]
-}
+// SEMANA 1
 
-console.log(objeto1,objeto2,objeto3)
-// arrayObjt.push(objeto1,objeto2,objeto3);
-const arrayObjt=[];
-// // semana 4
-if(objeto1.generoF){
-    console.log("validado")
-    arrayObjt.push(objeto1)
-}else{
-    console.log("não validado")
-}
-if(objeto2.generoF){
-    console.log("validado")
-    arrayObjt.push(objeto2)
-}else{
-    console.log("não validado")
-}
-if(objeto3.generoF){
-    console.log("validado")
-    arrayObjt.push(objeto3)
-}else{
-    alert("item não adicionado")
-}
-console.log(arrayObjt);
-// objeto1.generoF ? arrayObjt.push(objeto1) : alert("item não adicionado")
-// objeto2.generoF ? arrayObjt.push(objeto2) : alert("item não adicionado")
-// objeto3.generoF ? arrayObjt.push(objeto3) : alert("item não adicionado")
+const nome="Herminone Jean Granger";
+const nomeMaiuscula=nome.toUpperCase();
+const idade= 43;
+const mestico=false;
+const ocupacao=["Funcionária do Departamento para Regulamentação e Controle das Criaturas Mágicas"," Vice-chefe do Departamento de Execução das Leis da Magia"," Ministra da Magia"];
+// console.log(`${nomeMaiuscula}\nIdade:${idade} anos\nMestiço?:${mestico}\nOcupações:${ocupacao}`);
 
+const nome2="Harry Tiago Potter";
+const nomeMaiuscula2=nome2.toUpperCase();
+const idade2= 42;
+const mestico2=true;
+const ocupacao2=["Chefe da Seção dos Aurores"," Palestrante convidado de Defesa Contra as Artes das Trevas"," Chefe do Departamento de Execução das Leis da Magia"];
+// console.log(`${nomeMaiuscula2}\nIdade:${idade2} anos\nMestiço?:${mestico2}\nOcupações:${ocupacao2}`);
 
-// const nome="Cléo de Nile";
+const nome3="Ronald Abílio Weasley";
+const nomeMaiuscula3=nome3.toUpperCase();
+const idade3= 42;
+const mestico3=false;
+const ocupacao3=["Chefe da Seção dos Aurores"," Palestrante convidado de Defesa Contra as Artes das Trevas"," Chefe do Departamento de Execução das Leis da Magia"];
+// console.log(`${nomeMaiuscula3}\nIdade:${idade3} anos\nMestiço?:${mestico3}\nOcupações:${ocupacao2}`);
+
+//MÉDIA
+const soma=idade+idade2+idade3;
+// console.log("soma das idades dos 3 personagens principais de Harry Potter:",soma);
+const media= soma/3;
+// console.log("media das idades dos 3 personagens principais de Harry Potter:",media);
+
+// CHECAGEM DE BOOLEANOS
+const verificaçãoGenero=mestico&&mestico2&&mestico3;
+// console.log("Todos os personagens são Mestiços?:",verificaçãoGenero);
+
+// SEMANA 2
+// const ocupacao=["Funcionária do Departamento para Regulamentação e Controle das Criaturas Mágicas"," Vice-chefe do Departamento de Execução das Leis da Magia"," Ministra da Magia"];
+// const ocupacao2=["Chefe da Seção dos Aurores"," Palestrante convidado de Defesa Contra as Artes das Trevas"," Chefe do Departamento de Execução das Leis da Magia"];
+// const ocupacao3=["Chefe da Seção dos Aurores"," Palestrante convidado de Defesa Contra as Artes das Trevas"," Chefe do Departamento de Execução das Leis da Magia"];
 // const nomeMaiuscula=nome.toUpperCase();
-// const idade=5843;
-// const especie="Múmia";
-// const generoF=true;
-// const amigos=["Deuce Gorgon","Ghoulia Yelps","Clawdeen Wolf","Frankie Stein"];
-// console.log(`${nomeMaiuscula}\nIdade:${idade} anos\nFilha(o) de qual monstro?:${especie}\nGênero Feminino?:${generoF}\nAmigos:${amigos}`);
+// const nomeMaiuscula2=nome2.toUpperCase();
+// const nomeMaiuscula3=nome3.toUpperCase();
 
-// const nome2="Elissabat";
-// const nome2Maiuscula=nome2.toUpperCase();
-// const idade2=1601;
-// const especie2="Vampiro";
-// const generoF2= true;
-// const amigos2=["Draculaura","Viperine Gorgon"];
-// console.log(`${nome2Maiuscula}\nIdade:${idade2} anos\nFilha(o) de qual monstro?:${especie2}\nGênero Feminino?:${generoF2}\nAmigos:${amigos2}`);
+// SEMANA 3
 
-// const nome3="Clawd Wolf";
-// const nome3Maiuscula=nome3.toUpperCase();
-// const idade3=17;
-// const especie3="Lobisomem";
-// const generoF3=false;
-// const amigos3=["Heath Burns","Deuce Gorgon","Draculaura","Jackson Jekyll"];
-// console.log(`${nome3Maiuscula}\nIdade:${idade3} anos\nFilha(o) de qual monstro?:${especie3}\nGênero Feminino?:${generoF3}\nAmigos:${amigos3}`);
+const objt1={
+    nome:"Herminone Jean Granger".toUpperCase(),
+    idade: 43,
+    mestico:false,
+    ocupacao:["Funcionária do Departamento para Regulamentação e Controle das Criaturas Mágicas"," Vice-chefe do Departamento de Execução das Leis da Magia"," Ministra da Magia"]
+}
+
+const objt2={
+    nome:"Harry Tiago Potter".toUpperCase(),
+    idade: 42,
+    mestico:true,
+    ocupacao:["Chefe da Seção dos Aurores"," Palestrante convidado de Defesa Contra as Artes das Trevas"," Chefe do Departamento de Execução das Leis da Magia"]
+}
+
+const objt3={
+    nome:"Ronald Abílio Weasley".toUpperCase(),
+    idade: 42,
+    mestico:false,
+    ocupacao:["Chefe da Seção dos Aurores"," Palestrante convidado de Defesa Contra as Artes das Trevas"," Chefe do Departamento de Execução das Leis da Magia"]
+}
+// console.log(objt1,objt2,objt3);
+const arrayObjt=[];
+arrayObjt.push(objt1,objt2,objt3);
+console.log(arrayObjt);
+
+// SEMANA 4
+
+// if(objt1.mestico){
+//         console.log("validado")
+//         arrayObjt.push(objt1)
+//     }else{
+//         console.log("item não adicionado")
+//         alert("item objt 1 não adicionado")
+//     }
+//     if(objt2.mestico){
+//         console.log("validado")
+//         arrayObjt.push(objt2)
+//     }else{
+//         console.log("item objt 2 não adicionado")
+//     }
+//     if(objt3.mestico){
+//         console.log("validado")
+//         arrayObjt.push(objt3)
+//     }else{
+//         console.log("item não adicionado")
+//         alert("item objt 3 não adicionado")
+//     }
+
+// objt1.mestico ? arrayObjt.push(objt1) : alert("item objt 1 não adicionado")
+// objt2.mestico ? arrayObjt.push(objt2) : alert("item objt 2 não adicionado")
+// objt3.mestico ? arrayObjt.push(objt3) : alert("item objt 3 não adicionado")
+// console.log(arrayObjt);
+
+// SEMANA 5
+const FazendoStringOcupacao = (array) => {
+  
+    return {
+        nome:array.nome,
+        idade:array.idade,
+        mestico:array.mestico,
+        ocupacao:array.ocupacao.toString()
+    }
+};
+const arrayComStringOcupacao =arrayObjt.map(FazendoStringOcupacao)
+console.log("array em formato de string", arrayComStringOcupacao)
+
+// // SEMANA 6
+// const funcaoWeekSeis = (objt) =>{
+//     return {
+//         nome:objt.nome,
+//         idade:objt.idade,
+//         mestico:objt.mestico,
+//         ocupacao:objt.ocupacao.toString()   
+//     }
+// }
+// console.log( funcaoWeekSeis(objt1));
+// dar uma olhada para ver se é isso mesmo
+// PARTE 2
+function weekSeisParteDois(arrayDeObjt, valorString){
+
+    let objtARetornar={}
+
+    for(let i = 0 ; i < arrayDeObjt.length; i++){
+        if(arrayDeObjt[i].nome===valorString){
+            // objtARetornar.nome = arrayDeObjt[i].nome;
+            // objtARetornar.idade = arrayDeObjt[i].idade;
+            // objtARetornar.mestico = arrayDeObjt[i].mestico;
+            // objtARetornar.ocupacao = arrayDeObjt[i].ocupacao;
+
+        }
+    }
+}
 
 
-// /// média
-// // const soma=idade+idade2+idade3;
-// console.log("soma das idades dos 3 personagens de Monster High:",soma);
-// const media= soma/3;
-// console.log("media das idades dos 3 personagens de Monster High:",media);
-// //checagem de booleanos
-// const verificaçãoGenero=generoF&&generoF2&&generoF3;
-// console.log("Todos os personagens listados são mulheres?:",verificaçãoGenero);
-// //
+// const retornaString = (arrayObjt, string) =>{
+//     arrayObjt
+//     if(arrayObjt.nome == string){
+//         return arrayObjt
+//     }
+// }
+// const stringHermione = arrayObjt.filter(retornaString())
+
+// console.log(stringHermione);
+// const retornaString = arrayObjt.filter(array, string =>array.nome == string)
+
+// if (objtARetornar=== {}) {
+//     alert("nao identificado")
+// }else{
+// //    return objtARetornar;
+// }
+
+// funcaoWeekSeis();
+// console.log();
+
+
