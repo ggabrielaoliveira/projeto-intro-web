@@ -1,0 +1,48 @@
+*{
+    padding:0;
+    margin:0;
+    /* box-sizing: border-box; */
+}
+.container-input{
+    text-align: center;
+    padding: 10px;
+}
+.campo-input{
+    height: 5vh;
+    width: 50%;
+    text-align: center;
+}
+.classe-botao{
+    height: 5vh;
+    width: 5wh;
+    text-align: center;
+}
+header{
+    background-color: rgb(136, 18, 18);
+    font-family:'Times New Roman';
+    text-align: center;
+}
+main{
+    background-color: black;
+}
+#conatiner-info{
+    display: inline;
+}
+.container-personagens{
+    color:antiquewhite;
+    font-family:'Times New Roman';
+}
+#meu-nome{
+    color:antiquewhite;
+}
+.git-hub{
+    text-align:left;
+    width: 10%;
+    height: 10%;
+}
+footer{
+    background-color: rgb(136, 18, 18);
+    font-family:'Times New Roman';
+    height: 40px;
+    padding: 10px;
+}
