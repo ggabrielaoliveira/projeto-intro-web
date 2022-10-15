@@ -1,48 +1,267 @@
 *{
-    padding:0;
-    margin:0;
-    /* box-sizing: border-box; */
+    margin: 0px;
+    padding: 0px;
 }
-.container-input{
-    text-align: center;
-    padding: 10px;
-}
-.campo-input{
-    height: 5vh;
-    width: 50%;
-    text-align: center;
-}
-.classe-botao{
-    height: 5vh;
-    width: 5wh;
-    text-align: center;
-}
+
 header{
     background-color: rgb(136, 18, 18);
-    font-family:'Times New Roman';
-    text-align: center;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+    align-items:center;
 }
+
+h1{
+    display: flex;
+    color: gold;
+    font-size: 50px;
+}
+
 main{
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+span{
+    color: gold;
+}
+ul{
+    display: grid;
+    grid-template-rows:20px 20px 20px 20px;
+    grid-template-columns: 1fr ;
+    row-gap: 10px;
+}
+.brasao{
+    height: 60px;
+    width: 60px;
+}
+#container-input{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#img-hp{
+    height: 150px;
+    width: 400px;
+    margin: 50px;
+}
+.campo-input{
+    height: 30px;
+    width: 400px;
+    text-align: center;
+    border-radius: 40px;
+}
+.classe-botao{
+    width: 80px;
+    height: 25px;
+    border-radius: 40px;
+}
+
+#container-personagens{
+    display: flex;
+    justify-items:center;
+    align-items: center;
+    margin: 10px;
+    padding: 0px;
+    width: 100%;
+    flex-direction: column;
+    color:antiquewhite;
+    font-family:'Times New Roman';
+}
+
+.harry{
+    background-color: rgb(136, 18, 18);
+    border-radius: 50px;
+    border: 5px solid gold;
+    height: 300px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items:center;
+    margin-bottom: 40px;
+}
+
+.img-harry{
+    height: 281px;
+    width: 200px;
+    border-radius: 40px;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+}
+
+.hermione{
+    background-color: rgb(136, 18, 18);
+    border-radius: 50px;
+    border: 5px solid gold;
+    height: 300px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items:center;
+    justify-items:center;
+    margin-bottom: 40px;
+}
+.lista-infos{
+    background-color: black;
+    border-radius: 20px;
+    margin: 20px;
+    margin-left:10px;
+    padding: 30px;
+    font-size: 20px;
+}
+.lista-hermi{
+    background-color: black;
+    border-radius: 20px;
+    margin: 20px;
+    margin-left:50px;
+    padding: 30px;
+    font-size: 20px;
+}
+.img-hermi{
+    height: 300px;
+    width: 180px;
+    margin-left:20px;
+    align-items: center;
+}
+
+.rony{
+    background-color: rgb(136, 18, 18);
+    border-radius: 50px;
+    height: 300px;
+    border: 5px solid gold;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items:center;
+    
+}
+.img-rony{
+    height: 280px;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+footer{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 5px;
+    background-color:rgb(136, 18, 18);
+    color: gold;
+    text-align: center;
+    font-family:georgia;
 }
 #conatiner-info{
-    display: inline;
-}
-.container-personagens{
-    color:antiquewhite;
-    font-family:'Times New Roman';
-}
-#meu-nome{
-    color:antiquewhite;
+    display: flex;
+
+    align-items:flex-start;
+    flex-direction:row
 }
 .git-hub{
-    text-align:left;
-    width: 10%;
-    height: 10%;
+    height: 35px;
+    border-radius: 50px;
+    display: flex;
+    margin: 10px;
+    align-items: center;
 }
-footer{
-    background-color: rgb(136, 18, 18);
-    font-family:'Times New Roman';
-    height: 40px;
-    padding: 10px;
+
+#meu-nome{
+    display: flex;
+    margin: 10px;
+    align-items: center;
+}
+
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+   
+    h1{
+        color: gold;
+        font-size: 30px;
+    }
+    ul{
+        display: flex;
+        padding: 20px;
+        background-color: blueviolet;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: center;
+    }
+    
+    #img-hp{
+        height: 100px;
+        width: 200px;
+        margin: 50px;
+}
+#container-personagens{
+    margin: 0px;
+    padding:0px;
+}
+#container-input{
+    margin: 4px;
+    padding:0px;
+}
+.campo-input{
+    height: 30px;
+    width: 200px;
+    text-align: center;
+    border-radius: 20px;
+}
+.lista-infos{
+    padding: 0px;
+    margin-top: 10px;
+    display: inline;
+    border-radius: 10px;
+}
+.lista-hermi{
+    padding: 0px;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: inline;
+    border-radius: 10px; 
+}
+.harry,.hermione,.rony{
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    justify-content:center;
+
+}
+.img-harry{
+    display: flex;
+    height: 160px;
+    width: 150px;
+    border-radius: 0px;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+}
+.img-rony{
+    align-items: center;
+    height: 180px;
+    width: 120px;
+    padding: 0px;
+    margin:0px;
+}
+.img-hermi{
+    align-items: center;
+    height: 210px;
+    width: 120px;
+    padding: 0px;
+    margin:0px;
+}
 }
