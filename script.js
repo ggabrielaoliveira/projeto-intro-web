@@ -1,65 +1,67 @@
 // SEMANA 1
 
-const nome="Herminone Jean Granger";
-const nomeMaiuscula=nome.toUpperCase();
+// const nome="Hermione Jean Granger";
 const idade= 43;
 const mestico=false;
-const ocupacao=["Funcionária do Departamento para Regulamentação e Controle das Criaturas Mágicas"," Vice-chefe do Departamento de Execução das Leis da Magia"," Ministra da Magia"];
-// console.log(`${nomeMaiuscula}\nIdade:${idade} anos\nMestiço?:${mestico}\nOcupações:${ocupacao}`);
+// const ocupacao=["Funcionária do Departamento para Regulamentação e Controle das Criaturas Mágicas"," Vice-chefe do Departamento de Execução das Leis da Magia"," Ministra da Magia"];
 
-const nome2="Harry Tiago Potter";
-const nomeMaiuscula2=nome2.toUpperCase();
+// const nome2="Harry Tiago Potter";
 const idade2= 42;
 const mestico2=true;
-const ocupacao2=["Chefe da Seção dos Aurores"," Palestrante convidado de Defesa Contra as Artes das Trevas"," Chefe do Departamento de Execução das Leis da Magia"];
-// console.log(`${nomeMaiuscula2}\nIdade:${idade2} anos\nMestiço?:${mestico2}\nOcupações:${ocupacao2}`);
+// const ocupacao2=["Chefe da Seção dos Aurores"," Palestrante convidado de Defesa Contra as Artes das Trevas"," Chefe do Departamento de Execução das Leis da Magia"];
 
-const nome3="Ronald Abílio Weasley";
-const nomeMaiuscula3=nome3.toUpperCase();
+// const nome3="Ronald Abílio Weasley";
 const idade3= 42;
 const mestico3=false;
-const ocupacao3=["Chefe da Seção dos Aurores"," Palestrante convidado de Defesa Contra as Artes das Trevas"," Chefe do Departamento de Execução das Leis da Magia"];
-// console.log(`${nomeMaiuscula3}\nIdade:${idade3} anos\nMestiço?:${mestico3}\nOcupações:${ocupacao2}`);
+// const ocupacao3=["Chefe da Seção dos Aurores"," Palestrante convidado de Defesa Contra as Artes das Trevas"," Chefe do Departamento de Execução das Leis da Magia"];
 
 //MÉDIA
 const soma=idade+idade2+idade3;
 // console.log("soma das idades dos 3 personagens principais de Harry Potter:",soma);
 const media= soma/3;
-// console.log("media das idades dos 3 personagens principais de Harry Potter:",media);
+console.log("media das idades dos 3 personagens principais de Harry Potter:",media);
 
 // CHECAGEM DE BOOLEANOS
 const verificaçãoGenero=mestico&&mestico2&&mestico3;
-// console.log("Todos os personagens são Mestiços?:",verificaçãoGenero);
+console.log("Todos os personagens são Mestiços?:",verificaçãoGenero);
 
 // SEMANA 2
+
 // const ocupacao=["Funcionária do Departamento para Regulamentação e Controle das Criaturas Mágicas"," Vice-chefe do Departamento de Execução das Leis da Magia"," Ministra da Magia"];
 // const ocupacao2=["Chefe da Seção dos Aurores"," Palestrante convidado de Defesa Contra as Artes das Trevas"," Chefe do Departamento de Execução das Leis da Magia"];
 // const ocupacao3=["Chefe da Seção dos Aurores"," Palestrante convidado de Defesa Contra as Artes das Trevas"," Chefe do Departamento de Execução das Leis da Magia"];
-// const nomeMaiuscula=nome.toUpperCase();
-// const nomeMaiuscula2=nome2.toUpperCase();
-// const nomeMaiuscula3=nome3.toUpperCase();
+
+// console.log(`${nome.toUpperCase()}\n${idade}\n${mestico}\n${ocupacao}`);
+// console.log(`${nome2.toUpperCase()}\n${idade2}\n${mestico2}\n${ocupacao2}`);
+// console.log(`${nome3.toUpperCase()}\n${idade3}\n${mestico3}\n${ocupacao3}`);
 
 // SEMANA 3
 
 const objt1={
-    nome:"Herminone Jean Granger".toUpperCase(),
+    nome:"hermione jean granger",
     idade: 43,
     mestico:false,
-    ocupacao:["Funcionária do Departamento para Regulamentação e Controle das Criaturas Mágicas"," Vice-chefe do Departamento de Execução das Leis da Magia"," Ministra da Magia"]
+    imagem: "./img/Hermione-Granger-Batalha-Harry-Potter-PNG.png",
+    ocupacao:["Funcionária do Departamento para Regulamentação e Controle das Criaturas Mágicas"," Vice-chefe do Departamento de Execução das Leis da Magia"," Ministra da Magia"],
+    link:"https://harrypotter.fandom.com/pt-br/wiki/Hermione_Granger"
 }
 
 const objt2={
-    nome:"Harry Tiago Potter".toUpperCase(),
+    nome:"harry tiago potter",
     idade: 42,
     mestico:true,
-    ocupacao:["Chefe da Seção dos Aurores"," Palestrante convidado de Defesa Contra as Artes das Trevas"," Chefe do Departamento de Execução das Leis da Magia"]
+    imagem: "./img/Harry-Potter-com-Fundo-Transparente.png",
+    ocupacao:["Chefe da Seção dos Aurores"," Palestrante convidado de Defesa Contra as Artes das Trevas"," Chefe do Departamento de Execução das Leis da Magia"],
+    link:"https://harrypotter.fandom.com/pt-br/wiki/Harry_Potter"
 }
 
 const objt3={
-    nome:"Ronald Abílio Weasley".toUpperCase(),
+    nome:"ronald abílio weasley",
     idade: 42,
     mestico:false,
-    ocupacao:["Chefe da Seção dos Aurores"," Palestrante convidado de Defesa Contra as Artes das Trevas"," Chefe do Departamento de Execução das Leis da Magia"]
+    imagem:"./img/Rony-Weasley-Harry-Potter-PNG.png",
+    ocupacao:["Chefe da Seção dos Aurores"," Palestrante convidado de Defesa Contra as Artes das Trevas"," Chefe do Departamento de Execução das Leis da Magia"],
+    link:"https://harrypotter.fandom.com/pt-br/wiki/Ronald_Weasley" 
 }
 // console.log(objt1,objt2,objt3);
 const arrayObjt=[];
@@ -69,25 +71,24 @@ console.log(arrayObjt);
 // SEMANA 4
 
 // if(objt1.mestico){
-//         console.log("validado")
-//         arrayObjt.push(objt1)
+//     arrayObjt.push(objt1)
+//     alert("Hermione é mestiça")
 //     }else{
-//         console.log("item não adicionado")
-//         alert("item objt 1 não adicionado")
+//         alert("Hermione não é mestiça")
 //     }
-//     if(objt2.mestico){
-//         console.log("validado")
-//         arrayObjt.push(objt2)
+// if(objt2.mestico){
+//     arrayObjt.push(objt2)
+//     alert("Harry é mestiço")
+// }else{
+//         alert("Harry não é mestiço")
+//     }
+// if(objt3.mestico){
+//     arrayObjt.push(objt3)
+//         alert("Rony é mestiço")
 //     }else{
-//         console.log("item objt 2 não adicionado")
+//         alert("Rony não é mestiço")
 //     }
-//     if(objt3.mestico){
-//         console.log("validado")
-//         arrayObjt.push(objt3)
-//     }else{
-//         console.log("item não adicionado")
-//         alert("item objt 3 não adicionado")
-//     }
+console.log(arrayObjt);
 
 // objt1.mestico ? arrayObjt.push(objt1) : alert("item objt 1 não adicionado")
 // objt2.mestico ? arrayObjt.push(objt2) : alert("item objt 2 não adicionado")
@@ -105,54 +106,116 @@ const FazendoStringOcupacao = (array) => {
     }
 };
 const arrayComStringOcupacao =arrayObjt.map(FazendoStringOcupacao)
-console.log("array em formato de string", arrayComStringOcupacao)
+// console.log("array em formato de string", arrayComStringOcupacao)
 
-// // SEMANA 6
-// const funcaoWeekSeis = (objt) =>{
-//     return {
-//         nome:objt.nome,
-//         idade:objt.idade,
-//         mestico:objt.mestico,
-//         ocupacao:objt.ocupacao.toString()   
-//     }
-// }
-// console.log( funcaoWeekSeis(objt1));
-// dar uma olhada para ver se é isso mesmo
-// PARTE 2
-function weekSeisParteDois(arrayDeObjt, valorString){
+// // SEMANA 6.1
+function imprimeObjeto(objeto){
+    let stringObjeto = ''
+    stringObjeto = objeto
+    // console.log(stringObjeto);
+}
+imprimeObjeto(objt2)
 
-    let objtARetornar={}
+// // SEMANA 6.2
+function retornaObjeto(arrayObjt, input){
+    // let retornaObjeto = {}
+    for(let i in arrayObjt){
+        for(let j in arrayObjt[i]){
+            if(arrayObjt[i][j]=== input){
+                // retornaObjeto = arrayObjt[i]
+                let main = document.getElementById("main-container")
+                let div = document.createElement("div");
+                let section = document.createElement("section")
+                let imagem = document.createElement("img");
+                let ul = document.createElement("ul");
+                let li = document.createElement("li")
+                let li2 = document.createElement("li")
+                let li3 = document.createElement("li")
+                let li4 = document.createElement("li")
+                let a = document.createElement("a");
 
-    for(let i = 0 ; i < arrayDeObjt.length; i++){
-        if(arrayDeObjt[i].nome===valorString){
-            // objtARetornar.nome = arrayDeObjt[i].nome;
-            // objtARetornar.idade = arrayDeObjt[i].idade;
-            // objtARetornar.mestico = arrayDeObjt[i].mestico;
-            // objtARetornar.ocupacao = arrayDeObjt[i].ocupacao;
 
+            div.setAttribute("id","div-sections");
+            section.setAttribute("id", "section1")
+            imagem.setAttribute("id","imagem-personagens");
+                imagem.src = arrayObjt[i].imagem
+            a.setAttribute("href", arrayObjt
+                [i].link)
+            a.setAttribute("target","_blank")
+
+                a.innerHTML = arrayObjt[i].nome.toUpperCase();
+                li2.innerHTML = `Idade: ${arrayObjt[i].idade}`;
+                li3.innerHTML = `É mestiço(a): ${arrayObjt[i].mestico}`;
+                li4.innerHTML = arrayObjt[i].ocupacao;
+
+            main.appendChild(div)
+            div.appendChild(section);
+            section.appendChild(imagem);
+            section.appendChild(ul);
+            ul.appendChild(li);
+            ul.appendChild(li2);
+            ul.appendChild(li3);
+            ul.appendChild(li4);
+            li.appendChild(a)
+
+            section.innerHtml;
+            ul.innerHTML
+
+           return retornaObjeto
+            }
         }
-    }
+    } 
 }
 
 
-// const retornaString = (arrayObjt, string) =>{
-//     arrayObjt
-//     if(arrayObjt.nome == string){
-//         return arrayObjt
-//     }
-// }
-// const stringHermione = arrayObjt.filter(retornaString())
 
-// console.log(stringHermione);
-// const retornaString = arrayObjt.filter(array, string =>array.nome == string)
-
-// if (objtARetornar=== {}) {
-//     alert("nao identificado")
-// }else{
-// //    return objtARetornar;
-// }
-
-// funcaoWeekSeis();
-// console.log();
+// WEEK 11
+for(i in arrayObjt){
+    let div = document.getElementById("div-sections");
+    let section = document.createElement("section")
+    let imagem = document.createElement("img");
+    let ul = document.createElement("ul");
+    let li = document.createElement("li")
+    let li2 = document.createElement("li")
+    let li3 = document.createElement("li")
+    let li4 = document.createElement("li")
+    let a = document.createElement("a");
 
 
+  div.setAttribute("id","div-sections");
+  section.setAttribute("id", "section1")
+   imagem.setAttribute("id","imagem-personagens");
+    imagem.src = arrayObjt[i].imagem
+    a.setAttribute("href", arrayObjt
+    [i].link)
+    a.setAttribute("target","_blank")
+
+    a.innerHTML = arrayObjt[i].nome.toUpperCase();
+    li2.innerHTML = `Idade: ${arrayObjt[i].idade}`;
+    li3.innerHTML = `É mestiço(a): ${arrayObjt[i].mestico}`;
+    li4.innerHTML = arrayObjt[i].ocupacao;
+
+   div.appendChild(section);
+   section.appendChild(imagem);
+   section.appendChild(ul);
+   ul.appendChild(li);
+   ul.appendChild(li2);
+   ul.appendChild(li3);
+   ul.appendChild(li4);
+   li.appendChild(a)
+
+   section.innerHtml;
+   ul.innerHTML
+}
+
+function busca(event){
+    event.preventDefault()
+    let input = document.getElementById("id-input").value.toLowerCase()
+    if(input === ""){
+        alert("não é possivel achar o personagem")
+    }else{
+        document.getElementById("div-sections").remove()
+
+        retornaObjeto(arrayObjt, input);
+    }
+}

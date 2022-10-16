@@ -4,59 +4,28 @@
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Projeto Intro Web</title>
-      <script src="script.js"></script>
+      <script src="script.js" defer></script>
       <link rel="stylesheet" href="style.css">
    </head>
    
    <body>
-      <header>
-         <h1>Projeto Intro Web</h1>
+      <header class="container-header">
+         <h1 clas="">Projeto Intro Web</h1>
          <img class="brasao"src="./img/Perfeito-Brasão-Harry-Potter-PNG-1024x1024.png">
       </header>
-      <main>
+      <main id="main-container">
          <section id="container-input">
-            <input class="campo-input" id="id-input" type="text" placeholder="Escreva o nome do personagem de HP">
-            <button type="submit" class="classe-botao" id="id-botao">Procurar</button>
+            <form class="form">
+               <input class="campo-input" id="id-input" value="" type="text" placeholder="Escreva o nome do personagem de HP" name="Buscar">
+               <button  onclick="busca(event)" class="classe-botao" id="id-botao">Procurar</button>
+            </form>
          </section>
-         <section id="container-personagens">
-            <img id="img-hp"src="./img/78-783412_harry-potter-logo-png.png">
-            <section class="harry">
-               <div id="imagem">
-                  <img class="img-harry" src="./img/Harry-Potter-com-Fundo-Transparente.png" alt="Imagem do Harry Potter segurando uma varinha">
-               </div>
-               <ul class="lista-infos">
-                  <li><a class="nome-perso"  href="https://harrypotter.fandom.com/pt-br/wiki/Harry_Potter" target="_blank"><span>Nome:</span> <i>Harry Tiago Potter</i></a>
-                  </li>
-                  <li><span>Idade:</span> 42 anos </li>
-                  <li><span>É mestiço:</span> true</li>
-                  <li><span>Ocupação:</span> Chefe da Seção dos Aurores, Palestrante convidado de Defesa Contra as Artes das Trevas, Chefe do Departamento de Execução das Leis da Magia</li>
-               </ul>
-            </section>
-            <section class="hermione">
-               <div id="imagem">
-                  <img class="img-hermi" src="./img/Hermione-Granger-Batalha-Harry-Potter-PNG.png">
-               </div>
-               <ul class="lista-hermi">
-                  <li><a class="nome-perso" href="https://harrypotter.fandom.com/pt-br/wiki/Hermione_Granger" target="_blank"><span>Nome:</span> <i>Hermione Jean Granger</i></a>
-                  </li>
-                  <li><span>Idade:</span> 43 anos</li>
-                  <li><span>É mestiça:</span> false</li>
-                  <li><span>Ocupação:</span> Funcionária do Departamento para Regulamentação e Controle das Criaturas Mágicas, Vice-chefe do Departamento de Execução das Leis da Magia, Ministra da Magia</li>
-               </ul>
-            </section>
-            <section class="rony">
-               <div id="imagem">
-                  <img class="img-rony" src="./img/Rony-Weasley-Harry-Potter-PNG.png">
-               </div>
-               <ul class="lista-infos">
-                  <li><a class="nome-perso"  href="https://harrypotter.fandom.com/pt-br/wiki/Ronald_Weasley" target="_blank"><span>Nome:</span> <i>Ronald Abílio Weasley</i></a>
-                  </li>
-                  <li><span>Idade:</span> 42</li>
-                  <li><span>É mestiço:</span> false</li>
-                  <li><span>Ocupação:</span> Chefe da Seção dos Aurores, Palestrante convidado de Defesa Contra as Artes das Trevas, Chefe do Departamento de Execução das Leis da Magia</li>
-               </ul>
-            </section>
-         </section>
+
+         <img id="img-hp"src="./img/78-783412_harry-potter-logo-png.png">
+
+         <div id="div-sections">
+         </div>
+
       </main>
       <footer>
          <div id="conatiner-info">
